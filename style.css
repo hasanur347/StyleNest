@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+/* ================================Navbar seciton start================================= */
+.navbar-brand{
+    color: red !important;
+    font-size:30px !important;
+    margin-left: 100px;
+}
+@media (max-width:330px){
+    .navbar-brand{
+        margin-left: 0px !important;
+    }
+}
+.navbar-brand span{
+    color: #ffd74f;
+}
+.navbar-nav{
+    margin-right: 100px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 20px 35px !important;
+    font-size: 18px !important;
+}
+.navbar-nav a:hover{
+    background-color: #ffd74f;
+    color: #fff;
+}
+/* ================================Navbar seciton end================================= */
+
+
+
+/* ================================carousel seciton start================================= */
+.slide-1{
+    background: url(images/slide-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100%;
+}
+.slide-2{
+    background: url(images/slide-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100%;
+}
+.slide-3{
+    background: url(images/slide-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100%;
+}
+.heading-text{
+    font-size: 70px;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+}
+.heading-text span{
+    color: #ffd74f;
+}
+.carousel-item p{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-primary{
+    background-color: #ffd74f !important;
+    border:none !important;
+    color: #fff !important;
+    font-size: 18px !important;
+}
+.btn-primary:hover{
+    background-color: #f65129 !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+        height: 60px !important;
+        width: 60px !important;
+        background-color: #00000080;
+        color: #fff;
+        padding: 10px;
+}
+.hero-button i{
+    width: 64px;
+    height: 64px;
+    background-color: #ffd74f;
+    border-radius: 50%;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.hero-button a{
+    text-decoration: none;
+}
+.hero-button i:hover{
+    background-color: #f65129;
+}
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #searchForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 90%;  /* Ensures a bit of padding on the sides */
+    }
+    #searchForm input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #searchForm button {
+        width: 100%;
+    }
+}
+/* ================================carousel seciton end================================= */
+
+
+/* ================================about seciton start================================= */
+.about h6{
+    color: #f65129;
+    font-size: 16px;
+}
+.about h2{
+    color: #717275;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+.about h2 span{
+    color: #000;
+    font-weight: bold;
+}
+.about h5{
+    color: #717275;
+    font-size: 32px;
+    padding-bottom: 18px;
+    font-weight: bold;
+}
+.about p{
+    font-size: 20px;
+    color: #717275;
+    font-weight: normal;
+}
+.images-round{
+gap: 45px;
+}
+.images-round .round-image{
+    display: block;
+    margin: auto;
+    height: 250px;
+    width: 250px; 
+}
+@media (max-width:570px){
+    .images-round .round-image{
+        max-height: 110px;
+        max-width: 110px;
+    }
+    .images-round .round-image-lg{
+        max-height: 160px;
+        max-width: 160px;
+        margin: 0;
+    }
+    .button-mob{
+        display: inline-block;
+        padding: 10px 50px;
+    }
+    .heading-text{
+        font-size: 50px;
+    }
+}
+.images-round .round-image-lg{
+    height: 350px;
+    width: 350px; 
+    display: block;
+    object-fit: cover;
+}
+/* ================================about seciton end================================= */
+
+
+
+/* ================================hours seciton start================================= */
+#hours{
+background: url(images/hours-section-photo.jpg);
+background-position: center;
+background-size: cover;
+}
+.my-card{
+    background-color:#e9eaeb ;
+    border-top:20px solid #f65129;
+    border-radius: 20px;
+    padding: 30px 50px;
+    overflow: hidden;
+    position: relative;
+}
+@media (max-width:570px){
+    section{
+        padding-top:0px;
+    }
+    .my-card{
+        margin-top: 80px;
+    }
+}
+.my-card h1{
+    font-weight: 600;
+    color: #000;
+    font-size: 48px;
+}
+.my-card h6{
+    color: #717275;
+    font-size: 18px;
+}
+.my-card  i{
+    font-size: 25px;
+    margin-right: 8px;
+    color: #717275;
+    margin-top: -10px;
+}
+.my-card h6 span{
+    color: #000;
+    font-weight: 700;
+}
+
+.my-card h6 .margin{
+    margin-left: 40px !important;
+}
+.my-card p{
+    color: #717275;
+    font-size: 18px;
+}
+/* ================================hours seciton end================================= */
+
+
+/* ================================shop seciton start================================= */
+.shpping h6{
+    font-size: 16px;
+    color: #f65129;
+    font-weight: 600;
+}
+.shpping h1{
+    color: #f65129;
+    font-size: 38px;
+    font-weight: 700;
+}
+.shpping h1 span{
+    color: #000;
+}
+.image-1{
+    border-radius: 20px;
+}
+.my-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 100px;
+    color: #fff !important;
+    background-color: #ffd74f !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 15px 20px;
+    display: none;
+    transition: all .3s linear;
+    border: none;
+}
+.my-btn:hover{
+    background-color: #f65129 !important;
+}
+.image-container:hover .my-btn{
+    display: block;
+}
+.page-item a{
+    color: #000;
+}
+.page-item a:hover{
+    background-color: #f65129;
+    color: #fff;
+}
+
+
+/* Style for circular pagination */
+.pagination .page-link {
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: background-color 0.3s ease-in-out;
+    margin: 0 15px;
+    padding: 0px !important;
+    color: #717275;
+    font-size: 14px;
+  }
+
+  /* Hover effect */
+  .pagination .page-link:hover {
+    background-color: #f65129; /* Background color on hover */
+    color: white; /* Text color on hover */
+    border-radius: 50%; /* Ensure it's circular */
+  }
+
+  /* Style for active page */
+.pagination .page-item.active .page-link {
+    background-color: #f65129;
+    color: white;
+    border-radius: 50%;
+}
+/* ================================shop seciton end================================= */
+
+
+
+/* ================================review seciton start================================= */
+.review img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.review{
+    background-color:#ffd74f;
+    border-radius: 1.5rem;
+    padding: 20px 30px;
+    transition: all .4s linear;
+    max-width: 400px;
+    overflow: hidden;
+}
+.review h4{
+    text-align: center;
+}
+.review > div {
+    display: flex;
+    justify-content: center;
+} 
+.review:hover{
+    box-shadow: 4px 4px 15px #f652296d;
+    transform: translateY(-2px);
+}
+/* ================================review seciton end================================= */
+
+
+
+/* ================================contact seciton start================================= */
+.custom-form .form-control {
+    background-color: var(--white-color);
+    box-shadow: none;
+    border: 0;
+    color: var(--p-color);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    outline: none;
+}
+.custom-form button{
+    color: #fff !important;
+    font-size: 20px;
+    background-color: #f65129 !important;
+    font-weight: 400;
+    transition: all .3s linear;
+}
+
+.custom-form button:hover{
+    background-color: #ffd74f !important;
+    border-color: transparent;
+}
+.custom-form .input-group{
+    background-color: #fff;
+    border: 2px solid #e9eaeb;
+    border-radius: .2rem;
+    margin-bottom: 20px;
+    padding-left: 24px;
+}
+.custom-block{
+    background-color: #ffd74f;
+    border-top: 20px solid #f65129;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 30px 50px;
+}
+.custom-block   i{
+    color: #f65129;
+    font-size: 25px !important;
+}
+.google-map{
+    border-radius: 20px;
+}
+/* ================================contact seciton end================================= */
+
+
+
+/* ================================footer seciton start================================= */
+#footer{
+    background-color: #36363e;
+}
+.footer-text{
+    max-width: 300px;
+}
+.footer-icon i{
+    font-size: 25px;
+    color: blue;
+    cursor: pointer;
+}
+.footer-text h1:hover{
+    text-decoration: underline;
+    color: #f65129 !important;
+}
+.footer-text p:hover{
+    color: #f65129 !important;
+}
+/* ================================footer seciton end================================= */
